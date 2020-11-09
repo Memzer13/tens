@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- HEAD SECTION-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>SD&éM</title>
+        <link rel="icon" href="img/favicon.png">
+        <link href="css/nav.min.css" rel="stylesheet">
+        <link href="css/styles.css" type="text/css" rel="stylesheet">    
+        <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- NAVIGATION SECTION-->
+        <nav class="nav">
+            <div class="container1">
+                <div class="logo">
+                    <a href="index.html">SD&éM</a>
+                </div>
+                <div id="mainListDiv" class="main_list">
+                    <ul class="navlinks">
+                        <li><a href="10s.html">10,s</a></li>
+                    </ul>
+                </div>
+                <span class="navTrigger">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </span>
+            </div>
+        </nav> 
+        <!-- HEADER SECTION-->
+        <section class="home">
+                <div class="headers">
+                    <h1>TRAINS</h1>
+                </div>        
+        </section>
+        <!--  GRID SECTION -->
+        <!-- Images used to open the lightbox -->
+        <div class="modalBox">
+            <div class="column"><img src="https://gals.kindgirls.com/d009/eva_elfie_20_48994/eva_elfie_20_48994_8.jpg" alt="fotos" onclick="openModal();currentSlide(1)" class="hover-shadow"></div>
+            <div class="column"><img src="https://gals.kindgirls.com/d009/mango_a_30_10777/mango_a_30_10777_10.jpg" alt="fotos" onclick="openModal();currentSlide(2)" class="hover-shadow"></div>
+            <div class="column"><img src="https://gals.kindgirls.com/d009/mango_a_30_58993/mango_a_30_58993_12.jpg" alt="fotos" onclick="openModal();currentSlide(3)" class="hover-shadow"></div>
+            <div class="column"><img src="https://gals.kindgirls.com/d009/clover_10993/clover_10993_14.jpg" alt="fotos" onclick="openModal();currentSlide(4)" class="hover-shadow"></div>
+            <div class="column"><img src="https://gals.kindgirls.com/d009/mango_30_10000/mango_30_10000_4.jpg" alt="fotos" onclick="openModal();currentSlide(5)" class="hover-shadow"></div>
+            <div class="column"><img src="https://gals.kindgirls.com/d009/mango_30_10000/mango_30_10000_15.jpg" alt="fotos" onclick="openModal();currentSlide(6)" class="hover-shadow"></div>
+            <div class="column"><img src="https://gals.kindgirls.com/d009/clover_17578/clover_17578_7.jpg" alt="fotos" onclick="openModal();currentSlide(7)" class="hover-shadow"></div>
+            <div class="column"><img src="https://gals.kindgirls.com/d009/mango_30_10000/mango_30_10000_13.jpg" alt="fotos" onclick="openModal();currentSlide(8)" class="hover-shadow"></div>
+            <div class="column"><img src="img/foto9.png" alt="fotos" onclick="openModal();currentSlide(9)" class="hover-shadow"></div>
+            <div class="column"><img src="img/foto10.png" alt="fotos" onclick="openModal();currentSlide(10)" class="hover-shadow"></div>
+            <div class="column"><img src="img/foto11.png" alt="fotos" onclick="openModal();currentSlide(11)" class="hover-shadow"></div>
+            <div class="column"><img src="img/foto12.png" alt="fotos" onclick="openModal();currentSlide(12)" class="hover-shadow"></div>
+            <div class="column"><img src="img/foto13.png" alt="fotos" onclick="openModal();currentSlide(13)" class="hover-shadow"></div>
+            <div class="column"><img src="img/foto14.png" alt="fotos" onclick="openModal();currentSlide(14)" class="hover-shadow"></div>
+            <div class="column"><img src="img/foto15.png" alt="fotos" onclick="openModal();currentSlide(15)" class="hover-shadow"></div>
+            <div class="column"><img src="img/foto16.png" alt="fotos" onclick="openModal();currentSlide(16)" class="hover-shadow"></div>
+            <div class="column"><img src="img/foto17.png" alt="fotos" onclick="openModal();currentSlide(17)" class="hover-shadow"></div>
+            <div class="column"><img src="img/foto18.png" alt="fotos" onclick="openModal();currentSlide(18)" class="hover-shadow"></div>
+            <div class="column"><img src="img/foto19.png" alt="fotos" onclick="openModal();currentSlide(19)" class="hover-shadow"></div>
+            <div class="column"><img src="img/foto20.png" alt="fotos" onclick="openModal();currentSlide(20)" class="hover-shadow"></div>
+            <div class="column"><img src="img/foto21.png" alt="fotos" onclick="openModal();currentSlide(21)" class="hover-shadow"></div>
+        </div>
+        <!--The Modal/Lightbox -->
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <div class="mySlides">
+                <div class="numbertext">1/21</div>
+            <img src="https://gals.kindgirls.com/d009/eva_elfie_20_48994/eva_elfie_20_48994_8.jpg" alt="fotos" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">2/21</div>
+            <img src="https://gals.kindgirls.com/d009/mango_a_30_10777/mango_a_30_10777_10.jpg" alt="fotos" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">3/21</div>
+            <img src="https://gals.kindgirls.com/d009/mango_a_30_58993/mango_a_30_58993_12.jpg" alt="fotos" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">4/21</div>
+            <img src="https://gals.kindgirls.com/d009/clover_10993/clover_10993_14.jpg" alt="fotos" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">5/21</div>
+            <img src="https://gals.kindgirls.com/d009/mango_30_10000/mango_30_10000_4.jpg" alt="fotos" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">6/21</div>
+            <img src="https://gals.kindgirls.com/d009/mango_30_10000/mango_30_10000_15.jpg" alt="fotos" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">7/21</div>
+            <img src="https://gals.kindgirls.com/d009/clover_17578/clover_17578_7.jpg" alt="fotos" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">8/21</div>
+            <img src="https://gals.kindgirls.com/d009/mango_30_10000/mango_30_10000_13.jp" alt="fotos" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">9/21</div>
+            <img src="img/foto9.jpg" alt="fotos" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">10/21</div>
+            <img src="img/foto10.png" alt="fotos" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">11/21</div>
+            <img src="img/foto11.png" alt="fotos" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">12/21</div>
+            <img src="img/foto12.jpg" alt="fotos" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">13/21</div>
+            <img src="img/foto13.jpg" alt="fotos" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">14/21</div>
+            <img src="img/foto14.jpg" alt="fotos" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">15/21</div>
+            <img src="img/foto15.jpg" alt="fotos" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">16/21</div>
+            <img src="img/foto16.jpg" alt="fotos" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">17/21</div>
+            <img src="img/foto17.jpg" alt="fotos" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">18/21</div>
+            <img src="img/foto18.jpg" alt="fotos" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">19/21</div>
+            <img src="img/foto19.jpg" alt="fotos" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">20/21</div>
+            <img src="img/foto20.jpg" alt="fotos" style="width:100%">
+            </div>        
+            <div class="mySlides">
+                <div class="numbertext">21/21</div>
+            <img src="img/foto21.jpg" alt="fotos" style="width:100%">
+            </div>       
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <!-- Caption text -->  
+            <div class="caption-container">
+                <p id="caption"></p></div>
+                <!-- Thumbnail image controls -->
+                <div class="column">
+                    <img class="demo" src="https://gals.kindgirls.com/d009/eva_elfie_20_48994/eva_elfie_20_48994_8.jpg
+" alt="fotos" onclick="currentSlide(1)">
+                </div>
+                <div class="column">
+                    <img class="demo" src="https://gals.kindgirls.com/d009/mango_a_30_10777/mango_a_30_10777_10.jpg
+" alt="fotos" onclick="currentSlide(2)">
+                </div>
+                <div class="column">
+                    <img class="demo" src="https://gals.kindgirls.com/d009/mango_a_30_58993/mango_a_30_58993_12.jpg" alt="fotos" onclick="currentSlide(3)">
+                </div>
+                <div class="column">
+                    <img class="demo" src="https://gals.kindgirls.com/d009/clover_10993/clover_10993_14.jpg" alt="fotos" onclick="currentSlide(4)">
+                </div>
+                <div class="column">
+                    <img class="demo" src="https://gals.kindgirls.com/d009/mango_30_10000/mango_30_10000_4.jpg" alt="fotos" onclick="currentSlide(5)">
+                </div>
+                <div class="column">
+                    <img class="demo" src="https://gals.kindgirls.com/d009/mango_30_10000/mango_30_10000_15.jpg" alt="fotos" onclick="currentSlide(6)">
+                </div>
+                <div class="column">
+                    <img class="demo" src="https://gals.kindgirls.com/d009/clover_17578/clover_17578_7.jpg" alt="fotos" onclick="currentSlide(7)">
+                </div>
+                <div class="column">
+                    <img class="demo" src="https://gals.kindgirls.com/d009/mango_30_10000/mango_30_10000_13.jpg" alt="fotos" onclick="currentSlide(8)">
+                </div>
+                <div class="column">
+                    <img class="demo" src="img/foto9.png" alt="fotos" onclick="currentSlide(9)">
+                </div>
+                <div class="column">
+                    <img class="demo" src="img/foto10.png" alt="fotos" onclick="currentSlide(10)">
+                </div>
+                <div class="column">
+                    <img class="demo" src="img/foto11.png" alt="fotos" onclick="currentSlide(11)">
+                </div>
+                <div class="column">
+                    <img class="demo" src="img/foto12.png" alt="fotos" onclick="currentSlide(12)">
+                </div>
+                <div class="column">
+                    <img class="demo" src="img/foto13.png" alt="fotos" onclick="currentSlide(13)">
+                </div>
+                <div class="column">
+                    <img class="demo" src="img/foto14.png" alt="fotos" onclick="currentSlide(14)">
+                </div>
+                <div class="column">
+                    <img class="demo" src="img/foto15.png" alt="fotos" onclick="currentSlide(15)">
+                </div>
+                <div class="column">
+                    <img class="demo" src="img/foto16.png" alt="fotos" onclick="currentSlide(16)">
+                </div>
+                <div class="column">
+                    <img class="demo" src="img/foto17.png" alt="fotos" onclick="currentSlide(17)">
+                </div>
+                <div class="column">
+                    <img class="demo" src="img/foto18.png" alt="fotos" onclick="currentSlide(18)">
+                </div>
+                <div class="column">
+                    <img class="demo" src="img/foto19.png" alt="fotos" onclick="currentSlide(19)">
+                </div>
+                <div class="column">
+                    <img class="demo" src="img/foto20.png" alt="fotos" onclick="currentSlide(20)">
+                </div>
+                <div class="column">
+                    <img class="demo" src="img/foto21.png" alt="fotos" onclick="currentSlide(21)">
+                </div>
+            </div>
+        <!-- FOOTER SECTION-->
+        <footer>
+            <div class="footer">
+            </div>
+        </footer>
+    </body>
+    <!--SCRIPT SECTION -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+</html>
